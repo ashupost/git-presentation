@@ -3,21 +3,15 @@
 
 	<head>
 		<meta charset="utf-8">
-
-		<title>C* Primer: Part 01 - Cassandra and Modelling Basics</title>
-
+		<title>Git Basics</title>
 		<meta name="description" content="A presentation to give insight into the basics of C* and data modelling">
-		<meta name="author" content="Christopher Reedijk | Gary Stewart">
-
+		<meta name="author" content="Mritunjay Kumar">
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
 		<link rel="stylesheet" href="css/reveal.min.css">
 		<link rel="stylesheet" href="css/theme/night.css" id="theme">
-		
-		<!-- For syntax highlighting -->
+    	<!-- For syntax highlighting -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
 
 		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
@@ -51,25 +45,20 @@
         	color: #5F5F5F;
         }
     </style>
-    <link rel="shortcut icon" href="./images/ing_nl_favicon.ico">
+   
 	</head>
 
 	<body>
-
 		<div class="reveal">
-
-			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 				<section>				
 					<section>
 						<h1><scan class="ING">GIT</scan></h1>		
-						<img width="100%" alt="Git merge" src="./images/git/basic-merging-2.png">			
-						<h4 class="fragment"><p class="ING">Official definition:</p> Git is a <span style="color: rgb(255, 20, 147);">free and open</span> source <span style="color: rgb(90, 120, 60);">distributed</span> <span style="color: rgb(70, 170, 147);">version control </span>system designed to handle everything from small to very large projects with speed and efficiency.</h3>
-						<p>
-						<h2 class="fragment"><span class="ING">(Almost) Everything is Local</span></h2>
-							<pre>
-	 						</pre>
-						</p>
+						<img width="90%" alt="Git merge" src="./images/git/basic-merging-2.png">			
+						<h4 class="fragment"><p class="ING">Official Definition:</p> Git is a <span style="color: rgb(255, 20, 147);">free and open</span> source <span style="color: rgb(90, 120, 60);">distributed</span> <span style="color: rgb(70, 170, 147);">version control </span>system designed to handle everything from small to very large projects with speed and efficiency.</h3>
+						<h3 class="fragment"><span class="ING">(Almost) Everything is Local</span></h3>
+							
+						
 					</section>	
 					<section>
 						<h2><scan class="ING">Branch</scan></h1>	
@@ -123,6 +112,8 @@ $ git log --oneline --decorate --graph --all
 </pre>
 					</section>
 
+</section>
+	<section>
 					<section>
 						 <h3><scan class="ING">Merge</scan></h3>	
 						 <h4 class="fragment" align="left">Command: <scan class="ING">git merge &lt;branch-name&gt;</scan></4>
@@ -156,6 +147,41 @@ $ git log --oneline --decorate --graph --all
 						</table>
 						</small>
 					</section>	
+
+					<section>
+						<h3><scan class="ING">Fast Forward merge</scan></h3>	
+						<img width="80%" alt="Fast Forward merge" src="./images/git/vogella/xmerge_fastforward10.png.pagespeed.ic.zBU0BNTb2h.png">
+						 <h4 class="fragment" align="left">$ git checkout master (move HEAD to master)</scan></h4>
+                         <h4 class="fragment" align="left">$ git merge branch1  (master <---- branch1)</scan></h4>	
+					</section>	
+					<section>
+						<h3><scan class="ING">Fast Forward merge result</scan></h3>	
+						<div class="fragment">
+						 <h4  align="left"><scan class="ING">$ git checkout master (move HEAD to master)</scan></h4>
+                         <h4  align="left"><scan class="ING">$ git merge branch1  (master <---- branch1)</scan></h4>
+                         <img width="70%" alt="Fast Forward merge" src="./images/git/vogella/xmerge_fastforward20.png.pagespeed.ic.u7HfFGvxcG.png">
+                         <div>	
+				    </section>
+					<section>
+						<h3><scan class="ING">Three-way-merge</scan></h3>	
+						<img width="80%" alt="Fast Forward merge" src="./images/git/vogella/xmerge_commit10.png.pagespeed.ic.XhOiqSa5Gi.png">
+						 <h4 class="fragment" align="left">$ git checkout master (move HEAD to master)</scan></h4>
+                         <h4 class="fragment" align="left">$ git merge branch  (master <---- branch)</scan></h4>	
+					</section>	
+					<section>
+						<h3><scan class="ING">Three-way-merge result</scan></h3>	
+						<div class="fragment">
+						 <h4  align="left"><scan class="ING">$ git checkout master (move HEAD to master)</scan></h4>
+                         <h4  align="left"><scan class="ING">$ git merge branch  (master <---- branch)</scan></h4>
+                         <img width="70%" alt="Fast Forward merge" src="./images/git/vogella/xmerge_commit20.png.pagespeed.ic.qyGyUxXibh.png">
+                        <p align="left"><small>Combines the respective changes from the two branches being merged. This commit points to both of its predecessors.</small><p/>
+                        <p align="left"><small >Also called the recursive merge strategy and is the default merge strategy.</small></p>
+                         <div>	
+				    </section>
+
+
+
+	</section>
 
 
 
