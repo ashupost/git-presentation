@@ -123,7 +123,39 @@ $ git log --oneline --decorate --graph --all
 </pre>
 					</section>
 
-
+					<section>
+						 <h3><scan class="ING">Merge</scan></h3>	
+						 <h4 class="fragment" align="left">Command: <scan class="ING">git merge &lt;branch-name&gt;</scan></4>
+						 <h4 class="fragment"><scan class="ING">2 Types of merge:</scan></4>
+						 <br>
+						 <br>
+						 <small>
+						<table width=100% class="fragment">
+							<tr>
+								<th class="ING" width=47%>Fast forward</th>
+								<th class="ING" width=6%></th>
+								<th class="ING" width=47%> Three-way-merge</th>
+							</tr>
+							<tr>
+								<td width=50% style="vertical-align:top">
+									<ul>
+										<li>Simply moves the pointer forward</li>
+										<li>When there is no divergent work to merge</li>
+										<li>Conflict not possibale</li>
+									</ul>
+								</td>
+								<td width=10%>&nbsp;</td>
+								<td width=50% style="vertical-align:top">
+									<ul>
+										<li>If commits are merged which are not direct predecessors of the current branch</li>
+										<li>May be Conflict</li>
+										
+									</ul>
+								</td>
+							</tr>
+						</table>
+						</small>
+					</section>	
 
 
 
