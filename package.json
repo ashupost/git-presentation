@@ -1,12 +1,17 @@
 {
-  "name": "reveal.js",
+  "name": "Git-presentation",
   "version": "2.6.1",
   "description": "The HTML Presentation Framework",
   "homepage": "http://lab.hakim.se/reveal-js",
   "subdomain": "revealjs",
   "scripts": {
-    "test": "grunt test",
-    "start": ""
+   
+
+   "lite": "lite-server",
+    "gulp": "gulp",
+    "start": "concurrent \"npm run gulp\" \"npm run lite\" "
+
+
   },
   "author": {
     "name": "Hakim El Hattab",
@@ -27,6 +32,8 @@
     "socket.io": "~0.9.13"
   },
   "devDependencies": {
+    "concurrently": "^2.0.0",
+    "lite-server": "^2.2.0",
     "grunt-contrib-qunit": "~0.2.2",
     "grunt-contrib-jshint": "~0.6.4",
     "grunt-contrib-cssmin": "~0.4.1",
