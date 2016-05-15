@@ -56,9 +56,66 @@
 							<h3><span class="ING">(Almost) Everything is Local</span></h3>
 					</section>	
 					<section>
+							<h5><scan class="ING">Download</scan></h5>
+							 <img width="100%" alt="Git merge" src="./images/git/mk/010.png">	
+							  <img width="100%" alt="Git merge" src="./images/git/mk/011.png">	
+							
+					</section>
+					<section>
+						<h3><span class="ING">After Download</span></h3>
+						<table>
+							<tr>
+								
+								<td width=40% style="vertical-align:middle">
+									<img width=100% src="./images/git/mk/012.png" alt="Cassandra Replication Strategy" style="background-color:white;"></img>
+									<small class="ING">Windows Context Menu</small>
+								</td>
+								<td width=60% style="vertical-align:middle">
+										<img width=100% src="./images/git/mk/013.png" alt="Cassandra Replication Strategy" style="background-color:white;"></img>
+									<small class="ING">Git Bash Command Line</small>
+								</td>
+							</tr>
+						</table>
+					</section>
+			<section>
+						<h2><span class="ING">Time Series</span></h2>
+						
+						<table width=100%>
+							<tr>
+								<td width=50% style="vertical-align:top">
+									<pre class="fragment">
+1111111111111111111111
+									</pre>
+								</td>
+								<td width=50% style="vertical-align:top">
+									<pre class="fragment">
+2222222222222222222222
+									</pre>
+								</td>
+							</tr>
+							<tr>
+								<td width=50% style="vertical-align:top">
+									<pre class="fragment">
+1111111111111111111111
+									</pre>
+								</td>
+								<td width=50% style="vertical-align:top">
+									<pre class="fragment">
+2222222222222222222222
+									</pre>
+								</td>
+							</tr>
+							
+							
+						</table>
+					</section>		
+					
+					<!--
+					<section>
 								<h2>Pretty Code</h2>
 								<pre><code class="hljs" data-trim contenteditable>Code Here</code></pre>
 					</section>
+					-->
 					</section>
 					<section>	
 					<section>
@@ -188,6 +245,7 @@
 							 <img width="100%" alt="Git merge" src="./images/git/mk/009.png">	
 							
 						</section>
+						
 					</section>
 
 
@@ -249,6 +307,66 @@
 						</section>
 
 	</section>
+	<section>
+						<section>
+							 <h1><scan class="ING">git pull</scan></h1>	
+
+						</section>
+						<section>
+							<h2>
+	                             <p><span <span class="ING">pull</span> <span class="fragment highlight-red">=</span> <span class="fragment highlight-blue">fetch</span> <span class="fragment highlight-green"> + </span><span class="fragment highlight-blue"> merge</span></p>
+	                         <h2>
+						</section>
+					
+						<section>
+							<h5><scan class="ING">git pull continue..</scan></h5>
+							 <img width="100%" alt="Git merge" src="./images/git/mk/018.png">	
+						</section>
+						<section>
+							<h5><scan class="ING">git pull continue..</scan></h5>
+							 <img width="100%" alt="Git merge" src="./images/git/mk/019.png">	
+						</section>
+						<section>
+							<h5><scan class="ING">git pull continue..</scan></h5>
+							 <img width="100%" alt="Git merge" src="./images/git/mk/020.png">	
+						</section>
+						<section>
+							<h5><scan class="ING">git pull continue..</scan></h5>
+							 <img width="100%" alt="Git merge" src="./images/git/mk/021.png">	
+						</section>
+							
+						<section>
+							<h5><scan class="ING">git pull continue..</scan></h5>
+							 <img width="100%" alt="Git merge" src="./images/git/mk/022.png">	
+						</section>
+							
+						<section>
+							<h5><scan class="ING">git pull continue..</scan></h5>
+							 <img width="100%" alt="Git merge" src="./images/git/mk/023.png">	
+						</section>
+							
+						<section>
+							<h5><scan class="ING">git pull continue..</scan></h5>
+							 <img width="100%" alt="Git merge" src="./images/git/mk/024.png">	
+						</section>
+						<section>
+							<h2><scan class="ING">GIT PUSH RULE</scan></h2>
+							<p class="fragment grow highlight-green">git commit -a -m "new changes in local"</p>
+							<p class="fragment grow highlight-green">git fetch origin branch</p>
+							<p class="fragment grow highlight-green">git merge origin/branch</p>
+							<p class="fragment grow highlight-green">git push origin branch</p>
+
+							
+						</section>
+	
+							
+						
+							
+
+							
+						</section>
+
+	</section>					
 
 
 	<section>
@@ -260,6 +378,25 @@
 							<img width="100%" alt="Git merge" src="./images/git/scm/commits-and-parents.png">	
 							<p><small>Figure: Chain of commits linked.</small><p>
 						</section>
+						<section>
+							<h5><scan class="ING">Object Database</scan></h5>
+							 <img width="100%" alt="Git merge" src="./images/git/mk/014.png">	
+						</section>
+						<section>
+							<h5><scan class="ING">Object Database : Commit 1</scan></h5>
+							 <img width="100%" alt="Git merge" src="./images/git/mk/015.png">	
+						</section>
+						<section>
+							<h5><scan class="ING">Object Database : Commit 2</scan></h5>
+							 <img width="100%" alt="Git merge" src="./images/git/mk/016.png">	
+						</section>
+
+						<section>
+							<h5><scan class="ING">Object Database : Commit 3/Last/Current</scan></h5>
+							 <img width="100%" alt="Git merge" src="./images/git/mk/017.png">	
+						</section>
+
+
 	</section>	
 
 
@@ -401,6 +538,11 @@
 							]
 					});
 					Reveal.configure({ 
+						keyboard: {
+   									 13: 'next', // go to the next slide when the ENTER key is pressed
+   									 27: function() {}, // do something custom when ESC is pressed
+    								 32: null // don't do anything when SPACE is pressed (i.e. disable a reveal.js default binding)
+  								  },
 						slideNumber: true,
 						hideAddressBar: true,
 						autoSlide: 0
